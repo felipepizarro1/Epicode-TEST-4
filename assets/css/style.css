@@ -39,7 +39,6 @@ body{
     font-weight: 600;
 }
 
-
 nav ul {
 
     display: flex;
@@ -48,9 +47,6 @@ nav ul {
     top: -40%;
     padding: 1em;
     margin: 2em;
-    
-    
-    
 }
 
 nav ul li {
@@ -113,6 +109,12 @@ main{
     left: 10%;
 }
 
+.section1{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
 .trendings{
     display: flex;
     flex-direction: column;
@@ -120,16 +122,19 @@ main{
     padding: 20px;
     margin: 80px;
 
+
 }
 
 .imgTrending{
-    text-align: center;
-    
-
+    display: flex;
+    align-items: center;
 }
 
-.imgTrending img{
+.username img{
     border-radius: 50%;
+    margin-right: 10px;
+    width: 50px; /* Ajusta el tamaño de la imagen de los usuarios */
+    height: 50px;
 }
 
 .row{
@@ -138,6 +143,37 @@ main{
     padding: 20px;
 }
 
+.soloTrending{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+
+.numero {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: #a0a0a0;
+    margin-right: 10px; 
+    
+}
+
 .username{
     display: flex;
+    flex-direction: row;
+    
 }
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.username .details {
+    margin-right: 10px;
+}
+
