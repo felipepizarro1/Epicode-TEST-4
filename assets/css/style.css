@@ -17,15 +17,27 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    transition: background-color 0.3s ease; 
+    transition: changeColor 0.5s ease infinite; 
     
     
 
 }
 
-.background-container.scrolled {
-    background-color: #00ff00; /* Color de fondo verde al hacer scroll */
-}
+.contenitoreLogoNav.scrolled {
+    animation: none; 
+    background-color: #1a8917; /
+  }
+
+@keyframes changeColor {
+    0% {
+        opacity: 0;
+      background-color: #ffc017;
+    }
+    100% {
+        opacity: 1;
+      background-color: #1a8917; 
+    }
+  }
 
 .logo{
     display: flex;
