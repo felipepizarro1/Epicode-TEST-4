@@ -17,9 +17,14 @@ body{
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    transition: background-color 0.3s ease; 
     
     
 
+}
+
+.background-container.scrolled {
+    background-color: #00ff00; /* Color de fondo verde al hacer scroll */
 }
 
 .logo{
@@ -109,6 +114,9 @@ main{
     left: 10%;
 }
 
+
+/* SECTION 1 */
+
 .section1{
     border-width: 1px;
     border-style: solid;
@@ -194,3 +202,99 @@ main{
     margin-right: 10px;
 }
 
+
+
+/* SECTION 2 */
+
+
+.section2{
+    display: inline-flex;
+    padding: 6em;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.imgArticle img{
+  
+    width: 80%;
+    padding: 15px;
+    
+}
+
+
+
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+.bottomText{
+    margin-top: 10px;
+}
+
+/*section2 b*/
+.right{
+    display: block;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.discover{
+    display: inline;
+    
+
+    width: 30%;
+    
+}
+
+.discover h2{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+  }
+  
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6,
+  .item7,
+  .item8,
+  .item9 {
+    
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding: 5px;
+    margin: 2px;
+    align-content: center;
+    color: gray;
+    border-radius: 4%;
+    
+  }
